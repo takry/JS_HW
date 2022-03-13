@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+alert(10 + 10 + "10"); // 10+10 = 20 + неявная типизация в строку "20+10"
+alert(10 + "10" + 10); // неявная типизация 101010
+alert(10 + 10 + +"10"); //унарный плюс 30
+alert(10 / -""); // пытаемся 10 разделить на минус бесконечность? infinity
+alert(10 / +"2,5"); // строка которую нельзя неявно перевести в число NaN
+
+    </script>
+</body>
+</html>
